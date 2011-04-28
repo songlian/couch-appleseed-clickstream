@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+    <channel>
+        <title>{{title}}</title>
+        <link>{{siteLink}}</link>
+        <description>{{description}}</description>
+        <language>{{language}}</language>
+        <pubDate>{{pubDateTime}}</pubDate>
+        <lastBuildDate>{{pubDateTime}}</lastBuildDate>
+{{#items}}
+        <item>
+            <title>{{title}}</title>
+            <link>{{articleLink}}</link>
+            <description><![CDATA[{{description}}]]></description>
+            <pubDate>{{pubDateTime}}</pubDate>
+            <guid isPermaLink="false">{{title}}</guid>
+        </item>
+{{/items}}
+    </channel>
+</rss>
